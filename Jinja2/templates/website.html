@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% set active_page = "page_3" %}
+
+{% block content %}
+    <p>It's text for Page_3 </p>
+
+{{ today.strftime("%d.%m.%Y") }}
+
+{% endblock content %}

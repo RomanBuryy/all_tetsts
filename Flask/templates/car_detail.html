@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<div class="row">
+    <div class="col-md">
+        <ul class="list-group">
+            <li class="list-group-item  flex-column align-items-start">
+                <p>Model: {{ car["model"] }}</p>
+                <p>Description: {{ car["description"] }}</p>
+            </li>
+        </ul>
+    </div>
+</div>
+{% endblock content %}

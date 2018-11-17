@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+        <div class="col-sm-3">
+
+            {% for text in news %}
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">{{text['title']}}</h4>
+
+                    <p class="card-text">{{ text['text'] }}</p>
+
+                </div>
+            </div>
+
+            {% endfor %}
+
+        </div>
+
+
+{% endblock content %}

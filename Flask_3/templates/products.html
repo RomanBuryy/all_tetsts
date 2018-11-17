@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+{% block content %}
+<div class="col-sm">
+    <div class="list-group">
+
+
+        {% for car in cars %}
+
+
+
+        <a href="{{ url_for('api.car_api_2', car_id = car['id'])  }}" class="list-group-item list-group-item-action">{{
+        car["model"] }}</a>
+
+        {% endfor %}
+    </div>
+</div>
+{% endblock content %}
+
+
+</body>
+</html>
